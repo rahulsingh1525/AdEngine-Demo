@@ -1,0 +1,43 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  
+  .top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .top-bar .profile {
+      padding-right: 20px; }
+  
+  .connection-div {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border: groove; }
+    .connection-div .all-rooms {
+      display: flex;
+      flex-direction: column; }
+      .connection-div .all-rooms table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid black; }
+        .connection-div .all-rooms table tbody tr:nth-child(odd) {
+          background-color: bisque; }
+        .connection-div .all-rooms table tbody tr:nth-child(even) {
+          background-color: cornsilk; }
+    .connection-div .each-room {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+  
+  .game-div {
+    display: none; }
+  
+  #can {
+    border: dashed; }
+  
+  /*# sourceMappingURL=style.css.map */
+  

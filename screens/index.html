@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdEngine Dashboard 🎛</title>
+    
+    <!-- <script src="profile.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="top-bar">
+            <div class="game-title">
+                The AdEngine Dashboard
+            </div>
+            <div class="game-status" id="game-status">
+                Lobby
+            </div>
+            <div class="profile" id="profile">
+                
+            </div>
+        </div>
+        <div class="connection-div main-segment" id="connection-div">
+            <div class="all-rooms" id="all-rooms"></div>
+            <div class="room-btns"></div>
+        </div>
+        <div class="game-div main-segment" id="game-div">
+            <div class="write">
+                <h3>Write Div</h3>
+            </div>
+            <div class="draw">
+                <h3>Draw div</h3>
+                <canvas id="can" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-storage.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+     <script>
+       // Your web app's Firebase configuration
+       var firebaseConfig = {
+         apiKey: "AIzaSyBEOu_hMpsN54CCmeitXeGDF7N8M2EA_GE",
+         authDomain: "adengine-new.firebaseapp.com",
+         databaseURL: "https://adengine-new.firebaseio.com",
+         projectId: "adengine-new",
+         storageBucket: "adengine-new.appspot.com",
+         messagingSenderId: "940796457262",
+         appId: "1:940796457262:web:8f757cf3410457a2e50abf",
+         measurementId: "G-FF2JXKF98W",
+       };
+ 
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+       firebase.analytics();
+     </script>
+     
+    <script src="screen-admin.js"></script>
+</body>
+
+</html>

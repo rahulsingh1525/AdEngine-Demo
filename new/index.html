@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AdEngine-demo 📺</title>
+    <link rel="stylesheet" href="../style.css" />
+
+    <script src="../localforage.js"></script>
+  </head>
+  <body class="full-div">
+    <div class="container">
+        <h3>Screen Name</h3>
+      <div class="create">
+        <input type="text" name="name" id="profile-input" />
+        <button id='profile-btn'>Update Name</button>
+      </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-analytics.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBEOu_hMpsN54CCmeitXeGDF7N8M2EA_GE",
+        authDomain: "adengine-new.firebaseapp.com",
+        databaseURL: "https://adengine-new.firebaseio.com",
+        projectId: "adengine-new",
+        storageBucket: "adengine-new.appspot.com",
+        messagingSenderId: "940796457262",
+        appId: "1:940796457262:web:8f757cf3410457a2e50abf",
+        measurementId: "G-FF2JXKF98W",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="profile.js"></script>
+  </body>
+</html>
